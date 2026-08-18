@@ -10,7 +10,7 @@
   "scripts": {
     "setup": "evershop install",
     "dev": "evershop dev",
-    "build": "npm run build --workspace=loja-roupas && evershop build --skip-minify",
+    "build": "npm run build --workspace=loja-roupas-theme && evershop build --skip-minify",
     "start": "evershop start",
     "user:create": "evershop user:create",
     "user:changePassword": "evershop user:changePassword"
