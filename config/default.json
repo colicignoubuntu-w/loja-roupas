@@ -1,0 +1,20 @@
+{
+  "shop": {
+    "language": "pt",
+    "currency": "BRL"
+  },
+  "themeConfig": {
+    "headTags": {
+      "links": [
+        {
+          "rel": "stylesheet",
+          "href": "/loja-roupas.css"
+        }
+      ]
+    }
+  },
+  "system": {
+    "extensions": [],
+    "theme": "loja-roupas"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "loja-roupas",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "themes/*",
+    "extensions/*"
+  ],
+  "scripts": {
+    "setup": "evershop install",
+    "start": "evershop start",
+    "build": "evershop build",
+    "dev": "evershop dev"
+  },
+  "dependencies": {
+    "@evershop/evershop": "2.2.1"
+  },
+  "devDependencies": {
+    "@parcel/watcher": "2.6.0",
+    "@swc/cli": "^0.8.1",
+    "@swc/core": "^1.16.0",
+    "@types/config": "3.3.5",
+    "@types/express": "5.0.6",
+    "@types/node": "26.2.0",
+    "@types/pg": "8.21.0",
+    "@types/react": "19.2.18",
+    "execa": "10.0.1",
+    "typescript": "7.0.2"
+  }
+}

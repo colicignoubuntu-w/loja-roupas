@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3000/men/camisetapreta</loc>
+    <lastmod>2026-08-17T01:28:35.848Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/men/camisetapreta-copy</loc>
+    <lastmod>2026-08-17T01:28:52.167Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/men/camisetapreta-copy-copy</loc>
+    <lastmod>2026-08-17T01:29:03.632Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/men/camiseta-oversised-azul</loc>
+    <lastmod>2026-08-18T00:18:57.837Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

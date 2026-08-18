@@ -1,0 +1,851 @@
+/* =========================================================
+   LOJA DE ROUPAS - ESTILOS GLOBAIS
+========================================================= */
+
+.fashion-home {
+  width: 100%;
+  background: #ffffff;
+  color: #171717;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header__middle {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.header__middle__center {
+  margin-right: 28px;
+}
+
+.header__middle__right {
+  gap: 8px;
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+========================================================= */
+
+.fashion-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.fashion-menu a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.fashion-menu a:hover {
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.fashion-hero {
+  min-height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f4f1ec;
+}
+
+.fashion-hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 8vw;
+}
+
+.fashion-hero__eyebrow {
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.fashion-hero h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -4px;
+  font-weight: 700;
+}
+
+.fashion-hero p {
+  max-width: 540px;
+
+  margin: 30px 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #555555;
+}
+
+
+/* =========================================================
+   BOTÕES HERO
+========================================================= */
+
+.fashion-hero__actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.fashion-button {
+  min-height: 52px;
+
+  padding: 0 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.fashion-button:hover {
+  transform: translateY(-2px);
+}
+
+.fashion-button--primary {
+  background: #111111;
+  color: #ffffff;
+}
+
+.fashion-button--primary:hover {
+  background: #333333;
+}
+
+.fashion-button--secondary {
+  border: 1px solid #111111;
+
+  color: #111111;
+  background: transparent;
+}
+
+.fashion-button--secondary:hover {
+  background: #111111;
+  color: #ffffff;
+}
+
+.fashion-button--light {
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* =========================================================
+   IMAGEM HERO
+========================================================= */
+
+.fashion-hero__visual {
+  min-height: 720px;
+  overflow: hidden;
+}
+
+.fashion-hero__image {
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* =========================================================
+   TÍTULOS DAS SEÇÕES
+========================================================= */
+
+.fashion-section-heading {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.fashion-section-heading span,
+.fashion-newsletter > span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.fashion-section-heading h2 {
+  margin: 10px 0 0;
+
+  font-size: clamp(32px, 4vw, 52px);
+  letter-spacing: -2px;
+}
+
+
+/* =========================================================
+   CATEGORIAS
+========================================================= */
+
+.fashion-categories {
+  padding: 100px 5vw;
+}
+
+.fashion-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.fashion-category-card {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fashion-category-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  background: #eeeeee;
+
+  overflow: hidden;
+}
+
+.fashion-category-card__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.fashion-category-card:hover .fashion-category-card__image img {
+  transform: scale(1.04);
+}
+
+.fashion-category-card h3 {
+  margin: 18px 0 5px;
+
+  font-size: 22px;
+}
+
+.fashion-category-card p {
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   PRODUTOS
+========================================================= */
+
+.fashion-products {
+  padding: 40px 5vw 110px;
+}
+
+.fashion-products__grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 28px 18px;
+}
+
+.fashion-product {
+  display: block;
+
+  min-width: 0;
+
+  color: #171717;
+  text-decoration: none;
+}
+
+.fashion-product__image {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 3 / 4;
+
+  background: #f2f2f2;
+
+  overflow: hidden;
+}
+
+.fashion-product__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.fashion-product:hover .fashion-product__image img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   PRODUTO SEM IMAGEM
+========================================================= */
+
+.fashion-product__no-image {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #999999;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   ETIQUETAS DE PRODUTO
+========================================================= */
+
+.fashion-product__sale,
+.fashion-product__soldout {
+  position: absolute;
+
+  top: 12px;
+
+  padding: 7px 10px;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.fashion-product__sale {
+  left: 12px;
+
+  background: #111111;
+  color: #ffffff;
+}
+
+.fashion-product__soldout {
+  right: 12px;
+
+  background: #ffffff;
+  color: #111111;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO PRODUTO
+========================================================= */
+
+.fashion-product__info {
+  padding-top: 14px;
+}
+
+.fashion-product__info h3 {
+  margin: 0 0 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+.fashion-product__price {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.fashion-product__price strong {
+  font-size: 15px;
+}
+
+.fashion-product__old-price {
+  color: #888888;
+
+  font-size: 13px;
+
+  text-decoration: line-through;
+}
+
+
+/* =========================================================
+   SEM PRODUTOS
+========================================================= */
+
+.fashion-products__empty {
+  padding: 70px 30px;
+
+  text-align: center;
+
+  background: #f5f5f5;
+}
+
+.fashion-products__empty h3 {
+  margin: 0 0 10px;
+
+  font-size: 22px;
+}
+
+.fashion-products__empty p {
+  margin: 0;
+
+  color: #666666;
+}
+
+
+/* =========================================================
+   PROMOÇÃO
+========================================================= */
+
+.fashion-promo {
+  margin: 20px 5vw 100px;
+
+  min-height: 350px;
+
+  padding: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  background: #111111;
+  color: #ffffff;
+}
+
+.fashion-promo span {
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.fashion-promo h2 {
+  margin: 12px 0;
+
+  font-size: clamp(44px, 6vw, 75px);
+
+  letter-spacing: -3px;
+
+  color: #ffffff;
+}
+
+.fashion-promo p {
+  margin: 0;
+
+  color: #bbbbbb;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   BENEFÍCIOS
+========================================================= */
+
+.fashion-benefits {
+  padding: 30px 5vw 100px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.fashion-benefit {
+  padding-top: 25px;
+
+  border-top: 1px solid #dddddd;
+}
+
+.fashion-benefit strong {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+.fashion-benefit h3 {
+  margin: 15px 0 8px;
+
+  font-size: 19px;
+}
+
+.fashion-benefit p {
+  margin: 0;
+
+  line-height: 1.6;
+
+  color: #666666;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.fashion-newsletter {
+  padding: 100px 20px;
+
+  text-align: center;
+
+  background: #f4f1ec;
+}
+
+.fashion-newsletter h2 {
+  margin: 12px 0;
+
+  font-size: clamp(34px, 5vw, 55px);
+
+  letter-spacing: -2px;
+}
+
+.fashion-newsletter p {
+  color: #666666;
+
+  font-size: 16px;
+}
+
+.fashion-newsletter__form {
+  max-width: 600px;
+
+  margin: 35px auto 0;
+
+  display: flex;
+}
+
+.fashion-newsletter__form input {
+  flex: 1;
+
+  min-width: 0;
+  height: 55px;
+
+  padding: 0 18px;
+
+  border: 1px solid #cccccc;
+  border-right: 0;
+
+  background: #ffffff;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.fashion-newsletter__form button {
+  height: 55px;
+
+  padding: 0 28px;
+
+  border: 0;
+
+  background: #111111;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.fashion-newsletter__form button:hover {
+  background: #333333;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+  .fashion-menu {
+    gap: 14px;
+  }
+
+  .fashion-menu a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fashion-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .fashion-hero__content {
+    min-height: 600px;
+  }
+
+  .fashion-hero__visual,
+  .fashion-hero__image {
+    min-height: 550px;
+  }
+
+  .fashion-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fashion-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fashion-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   HEADER RESPONSIVO
+========================================================= */
+
+@media (max-width: 780px) {
+  .header__middle {
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .header__middle__center {
+    margin-right: 0;
+  }
+
+  .fashion-menu {
+    width: 100%;
+
+    overflow-x: auto;
+
+    padding-bottom: 6px;
+
+    order: 3;
+
+    scrollbar-width: none;
+  }
+
+  .fashion-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fashion-menu a {
+    flex: 0 0 auto;
+
+    white-space: nowrap;
+  }
+}
+
+
+/* =========================================================
+   CELULAR
+========================================================= */
+
+@media (max-width: 650px) {
+  .fashion-hero__content {
+    min-height: 560px;
+
+    padding: 70px 24px;
+  }
+
+  .fashion-hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .fashion-hero p {
+    font-size: 16px;
+  }
+
+  .fashion-hero__visual,
+  .fashion-hero__image {
+    min-height: 450px;
+  }
+
+  .fashion-categories {
+    padding: 70px 20px;
+  }
+
+  .fashion-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .fashion-category-card h3 {
+    font-size: 17px;
+  }
+
+  .fashion-products {
+    padding: 20px 20px 70px;
+  }
+
+  .fashion-products__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px 10px;
+  }
+
+  .fashion-product__info h3 {
+    font-size: 14px;
+  }
+
+  .fashion-product__price {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2px;
+  }
+
+  .fashion-product__sale,
+  .fashion-product__soldout {
+    top: 8px;
+
+    padding: 5px 7px;
+
+    font-size: 8px;
+  }
+
+  .fashion-product__sale {
+    left: 8px;
+  }
+
+  .fashion-product__soldout {
+    right: 8px;
+  }
+
+  .fashion-promo {
+    margin: 0 20px 70px;
+
+    min-height: 380px;
+
+    padding: 45px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .fashion-benefits {
+    padding: 20px 20px 70px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .fashion-newsletter {
+    padding: 70px 20px;
+  }
+
+  .fashion-newsletter__form {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .fashion-newsletter__form input {
+    border-right: 1px solid #cccccc;
+  }
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 420px) {
+  .fashion-hero__content {
+    padding: 55px 20px;
+  }
+
+  .fashion-hero h1 {
+    font-size: 44px;
+  }
+
+  .fashion-hero__actions {
+    flex-direction: column;
+  }
+
+  .fashion-button {
+    width: 100%;
+  }
+
+  .fashion-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fashion-products__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* =========================
+   LOGO
+========================= */
+
+.fashion-logo {
+  display: inline-flex;
+  align-items: center;
+
+  color: #111111;
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  white-space: nowrap;
+}
+
+.fashion-logo:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 650px) {
+  .fashion-logo {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+}
+}
