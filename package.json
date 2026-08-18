@@ -9,9 +9,11 @@
   ],
   "scripts": {
     "setup": "evershop install",
+    "dev": "evershop dev",
+    "build": "npm run build --workspace=loja-roupas && evershop build --skip-minify",
     "start": "evershop start",
-    "build": "evershop build",
-    "dev": "evershop dev"
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword"
   },
   "dependencies": {
     "@evershop/evershop": "2.2.1"
